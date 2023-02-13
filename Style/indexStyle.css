@@ -1,0 +1,199 @@
+/* Needed class start */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.Start{
+    background-color: rgb(21, 170, 21);
+    padding: 10px 5px;
+    margin: 10px;
+    text-align: center;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 15px 15px 25px black;
+}
+.LikeHeader{
+    background-color: rgb(43, 123, 155);
+    padding: 7px 5px;
+    text-align: center;
+    color: white;
+    margin: 15px;
+    border-radius: 10px;
+}
+.ImageClass{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+/* Needed Class end */
+
+.DiscountContainer{
+    display: flex;
+    background-color: skyblue;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+/* Discount Part Start */
+
+.Discount{
+    width: 50%;
+    /* background-color: yellow; */
+    text-align: center;
+}
+.Title{
+    background-color: green;
+    color: white;
+    text-shadow: 5px 5px 5px red;
+    width: 180px;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 10px 5px;
+}
+.Rate{
+    background-color:white; 
+    width:250px;
+    color: black;
+    padding: 8px 5px;
+    border-radius: 5px;
+    margin: 10px auto;
+}
+.Price{
+    color: tomato;
+}
+.btn{
+    border:0;
+    padding: 5px 10px;
+    color: white;
+    background-color: tomato;
+    font-size: 22px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+.bg_purple{
+    background-color: purple;
+    color: white;
+}
+.bold{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Discount Part end */
+
+/* Discount by Coupon part start */
+.Discount_By_Coupon{
+    width: 50%;
+    text-align: center;
+    /* background-color: tomato; */
+}
+.couponbox{
+    border: 0;
+    outline:  none;
+    padding: 10px 15px;
+    border-radius: 7px;
+    font-weight: 700;
+    background-color: teal;
+    color: white;
+    font-size: 18px;
+}
+
+.AlertMessage{
+    background-color: yellow;
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px 0px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+}
+/* Discount by Coupon part end */
+
+
+/* Text Editor start */
+
+.TextEditor{
+    background-color: skyblue;
+}
+
+.Fullbox{
+    border: 2px solid black;
+    margin:15px auto;
+    width: 1200px;
+    background-color: rgb(126, 192, 218);
+}
+.bg-remove{
+    background:none;
+}
+.Upper{
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+.Left{
+    display: flex;
+    gap: 25px;
+}
+.Mid{
+    display: flex;
+    gap: 30px;
+}
+.Right{
+    display: flex;
+    gap: 25px;
+    margin-right: 40px;
+}
+.hr{
+    border: 1px solid black;
+    width: 97%;
+    margin: 0 auto;
+}
+.wt{
+    width: 98%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.WriteText{
+    background-color: white;
+    width: 97%;
+    margin: 10px auto;
+    height: 500px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 15px;
+    resize: none;
+}
+.ts{
+    height: 18px;
+}
+
+.text_size_box{
+    background-color: blue;
+    width: 60px;
+    font-size: 17px;
+    font-weight: 700;
+    height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+}
+
+.ActiveClass{
+    background-color: blue;
+    width: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+/* Text Editor end */

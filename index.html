@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text form</title>
+
+    <!-- CSS Link start -->
+    <link rel="stylesheet" href="Style/indexStyle.css">
+    <!-- CSS Link End -->
+
+    <!-- icon Link start -->
+    <link rel="shortcut icon" href="MyAssets/ICO/My_Icon.ico" type="image/x-icon">
+    <!-- icon Link end -->
+
+    <!-- font awesome script Link start -->
+    <script src="https://kit.fontawesome.com/c94050bf12.js" crossorigin="anonymous"></script>
+    <!-- font awesome script Link end -->
+</head>
+<body>
+    
+    <!-- Header Start -->
+    <header class="header">
+        <h2 class="Start">Developed By Suvrodeb Howlader</h2>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main start -->
+    <main class="main">
+
+        <!-- Discount Section start -->
+        <section>
+            <h4 class="LikeHeader">This is Discount part</h4>
+        <div class="DiscountContainer">
+            <div class="Discount">
+                <img class="ImageClass" src="Assets/Item-1.jpg" alt="">
+                <h1 class="Title">Airpod</h1>
+                <h2 class="Rate">Price: <span class="Price" id="previousprice_1">1000</span> Tala Only </h2>
+                <p>Press Apply Button to get 30% discount</p>
+                <button class="btn" id="btn1">Apply</button>
+                <p class="Rate bg_purple" id="Result1">Please Pay <span class="bold" id="Result1_Price"></span> Taka only </p>
+            </div>
+
+            <div class="Discount_By_Coupon">
+                <img class="ImageClass" src="Assets/Item-2.jpg" alt="">
+                <h1 class="Title">Mouse</h1>
+                <h2 class="Rate">Price: <span class="Price" id="previousprice_2">1000</span> Tala Only </h2>
+                <p>Write Your coupon code to get 30% discount</p>
+                <input type="text" name="" class="couponbox" id="couponboxid">
+                <button class="btn bg_purple" id="btn2">Apply</button>
+                <p class="AlertMessage" id="alertmessageid">Something</p>
+                <p class="Rate bg_purple" id="Result2">Please Pay <span class="bold" id="Result2_Price"></span> Taka only </p>
+            </div>
+        </div>
+        </section>
+     <!-- Discount Section end -->
+
+
+     <!-- Text Editor section start -->
+     <section class="TextEditor">
+        <h2 class="Title bg-remove">My Text Editor</h2>
+        <div class="Fullbox">
+            <div class="Upper">
+                <div class="Left">
+                    <i class="fa-solid fa-b " id="boldid" style="font-weight: 700;"></i>
+                    <i class="fa-solid fa-italic" id="italicid"></i>
+                    <i class="fa-solid fa-underline" id="underlineid"></i>
+                </div>
+
+                <div class="Mid">
+                    <i class="fa-solid fa-align-left" id="text_start_id"></i>
+                    <i class="fa-solid fa-align-center" id="text_center_id"></i>
+                    <i class="fa-solid fa-align-right" id="text_right_id"></i>
+                    <i class="fa-solid fa-align-justify" id="text_justify_id"></i>
+                </div>
+
+                <div class="Right">
+
+                    <select name="" id="text_size_id" class="ts" multiple="0" >
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16" selected>16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="21">21</option>
+                      </select>
+                      <p style="font-weight: 700;">Aa</p>
+
+                      <input type="color" id="text_color_id" name="" value="#ff0000">
+                </div>
+            </div>
+            <div class="hr"></div>
+            <div class="wt">
+                <textarea class="WriteText" name="" id="textareaid" ></textarea>
+            </div>
+           
+          
+        </div>
+     </section>
+     <!-- Text Editor section end -->
+
+        
+    </main>
+    <!-- Main End -->
+    
+    <!-- JS Link Start -->
+    <script src="JS/index_dev.js"></script>
+    <!-- JS Link End -->
+</body>
+</html>
