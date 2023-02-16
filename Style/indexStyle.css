@@ -49,7 +49,8 @@
     background-color: green;
     color: white;
     text-shadow: 5px 5px 5px red;
-    width: 180px;
+    width: 250px;
+    text-align: center;
     border-radius: 5px;
     margin: 10px auto;
     padding: 10px 5px;
@@ -65,7 +66,7 @@
 .Price{
     color: tomato;
 }
-.btn{
+/* .btn{
     border:0;
     padding: 5px 10px;
     color: white;
@@ -74,7 +75,7 @@
     margin: 5px 0px 5px 0px;
     border-radius: 7px;
     font-weight: 700;
-}
+} */
 .bg_purple{
     background-color: purple;
     color: white;
@@ -153,24 +154,15 @@
     width: 97%;
     margin: 0 auto;
 }
-.wt{
-    width: 98%;
-    margin: 0 auto;
-    padding: 15px;
-}
-.WriteText{
-    background-color: white;
-    width: 97%;
-    margin: 10px auto;
-    height: 500px;
+
+.ts{
+    height: 30px;
+    width: 60px;
     border: 0;
     outline: 0;
-    font-size: 16px;
-    padding: 15px;
-    resize: none;
-}
-.ts{
-    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .text_size_box{
@@ -187,13 +179,61 @@
 }
 
 .ActiveClass{
-    background-color: blue;
-    width: 20px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: blue;
+    width: 30px;
+    height: 28px;
+    border-radius: 5px;
     color: white;
-    
+    /* text-align: center; */
+}
+.mybold{
+    font-weight: 700 !important;
 }
 /* Text Editor end */
+
+.Checkkkk{
+    font-size: 14;
+}
+
+
+.wt{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.WriteText{
+    background-color: white;
+    width: 100%;
+    margin: 10px auto;
+    height: 500px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    padding: 15px;
+    resize: none;
+    border-radius: 7px;
+}
+
+@media only screen and (max-width:576px) {
+    .Fullbox{
+        width: 100%;
+    }
+
+    .Upper{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 30px;
+        column-gap: 20px;
+    }
+    
+    .wt{
+        width: 90%;
+    } 
+    .mdl{
+        width: 250px !important;
+    }
+}

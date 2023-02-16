@@ -88,6 +88,7 @@ const Text_Right_Button=document.getElementById('text_right_id')
 const Text_Justify_Button=document.getElementById('text_justify_id');
 
 const Text_Size_Button=document.getElementById('text_size_id');
+const Text_Case_Button=document.getElementById('textcaseid');
 const Text_Color_button=document.getElementById('text_color_id')
 
 
@@ -184,6 +185,17 @@ Text_Size_Button.addEventListener('change',function(e){
    
 })
 ///Text Size end
+
+Text_Case_Button.addEventListener('click',function(){
+    const CLASSLIST=Text_Case_Button.classList;
+    if(CLASSLIST.contains("ActiveClass")){
+        Text_Case_Button.classList.remove("ActiveClass");
+        TextForm.style.textTransform='lowercase';
+    }else{
+        Text_Case_Button.classList.add("ActiveClass");
+        TextForm.style.textTransform='uppercase';
+    }
+})
 
 Text_Color_button.addEventListener('input',function(event){
     const Color=event.target.value;
