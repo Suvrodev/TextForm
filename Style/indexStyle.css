@@ -99,8 +99,8 @@
     padding: 10px 15px;
     border-radius: 7px;
     font-weight: 700;
-    background-color: teal;
-    color: white;
+    /* background-color: rgb(144, 207, 207); */
+    color: black;
     font-size: 18px;
 }
 
@@ -216,6 +216,9 @@
     resize: none;
     border-radius: 7px;
 }
+/* #couponboxid{
+    color: white;
+} */
 
 @media only screen and (max-width:576px) {
     .Fullbox{

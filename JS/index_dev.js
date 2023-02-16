@@ -25,6 +25,10 @@ Button_1.addEventListener('click',function(){
 })
 
 
+//////check coupon code
+
+
+
 
 /////Discount by coupon Code
 const ApplyButton=document.getElementById('btn2');
@@ -33,12 +37,24 @@ const Result2=document.getElementById('Result2');
 const Result2_Price=document.getElementById('Result2_Price');
 const PreviousPrice2=document.getElementById('previousprice_2');
 const AlertMessage=document.getElementById('alertmessageid');
+const couponmessage=document.getElementById('matchcouponcodeid');
 
 Result2.style.display='none';
 AlertMessage.style.display='none';
 
+
+couponmessage.innerText="";
 CouponBox.addEventListener('keyup',function(e){
-    console.log(e.target.value);
+    const GT=e.target.value;
+    if(GT==='DISC30'){
+        couponmessage.innerText="Correct code";
+        couponmessage.style.color='green';
+        couponmessage.style.fontWeight='700';
+    }else{
+        couponmessage.innerText="Correct code";
+        couponmessage.style.color='red';
+    }
+   
 })
 
 ApplyButton.addEventListener('click',function(){
