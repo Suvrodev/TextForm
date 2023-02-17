@@ -51,7 +51,7 @@ CouponBox.addEventListener('keyup',function(e){
         couponmessage.style.color='green';
         couponmessage.style.fontWeight='700';
     }else{
-        couponmessage.innerText="Correct code";
+        couponmessage.innerText="InCorrect code";
         couponmessage.style.color='red';
     }
    
@@ -106,7 +106,7 @@ const Text_Justify_Button=document.getElementById('text_justify_id');
 const Text_Size_Button=document.getElementById('text_size_id');
 const Text_Case_Button=document.getElementById('textcaseid');
 const Text_Color_button=document.getElementById('text_color_id')
-
+const Text_Background_Button=document.getElementById('background_color_id');
 
 BoldButton.addEventListener('click',function(){
     const Text=TextForm.value;
@@ -201,12 +201,14 @@ Text_Size_Button.addEventListener('change',function(e){
    
 })
 ///Text Size end
-
+//const ALLTEXT=TextForm.value;
 Text_Case_Button.addEventListener('click',function(){
+    
     const CLASSLIST=Text_Case_Button.classList;
     if(CLASSLIST.contains("ActiveClass")){
         Text_Case_Button.classList.remove("ActiveClass");
         TextForm.style.textTransform='lowercase';
+       // TextForm.value=ALLTEXT;
     }else{
         Text_Case_Button.classList.add("ActiveClass");
         TextForm.style.textTransform='uppercase';
@@ -214,7 +216,42 @@ Text_Case_Button.addEventListener('click',function(){
 })
 
 Text_Color_button.addEventListener('input',function(event){
+
+    // var start = TextForm.selectionStart;
+    // var finish = TextForm.selectionEnd;
+    // var sel = TextForm.value.substring(start, finish);
+
+
+
+
+    //Here Main Part-----------
     const Color=event.target.value;
     console.log("COLOR: "+Color)
     TextForm.style.color=Color;
 })
+
+
+
+Text_Background_Button.addEventListener('input',function(event){
+    const selected_color=event.target.value;
+    TextForm.style.backgroundColor=selected_color;
+})
+
+//    TextForm.addEventListener('keyup',function(event){
+//       const GetText=event.target.value;
+//       console.log("Got color: "+color_);
+//       console.log("ALL TEXT: "+GetText);
+//       GetText.style.backgroundColor=color_;
+//    })
+// });
+
+// var InputedText;
+// TextForm.addEventListener('keyup',function(event){
+//     InputedText=event.target.value;
+//      console.log(InputedText);
+//     Text_Background_Button.addEventListener('input',function(e){
+//         let BGCOLOR=e.target.value;
+//         console.log("Kuchung Color: "+BGCOLOR);
+//         TextForm.style.backgroundColor="red";
+//     })
+// })

@@ -163,6 +163,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    background-color: lightseagreen;
 }
 
 .text_size_box{
@@ -220,6 +222,16 @@
     color: white;
 } */
 
+.sz{
+    font-size: 25px;
+}
+.udd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
 @media only screen and (max-width:576px) {
     .Fullbox{
         width: 100%;
@@ -238,5 +250,8 @@
     } 
     .mdl{
         width: 250px !important;
+    }
+    .Right{
+      margin: 0 auto;
     }
 }
